@@ -1,0 +1,1 @@
+a transactional db can save two key-value pairs. key, value size cannot larger than 8K.

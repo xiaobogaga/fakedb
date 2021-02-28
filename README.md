@@ -1,5 +1,5 @@
-a transactional db, based on aries and s2pl, can save two key-value pairs. key, value size cannot larger than 8K.
-built for learning purpose.
+fakedb, a transactional database, based on aries and s2pl, can save two key-value pairs. Key, value size cannot be larger than 8K.
+Built for learning purpose.
 
 ## Install:
 

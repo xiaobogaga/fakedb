@@ -1,13 +1,9 @@
 package buffer_logging
 
 import (
-	"fmt"
 	"github.com/kr/pretty"
 	"github.com/stretchr/testify/assert"
-	"github.com/xiaobogaga/fakedb/util"
-	"os"
 	"testing"
-	"time"
 )
 
 func TestLogRecord_Serialize_Deserialize(t *testing.T) {
@@ -32,16 +28,16 @@ func TestLogRecord_Serialize_Deserialize(t *testing.T) {
 }
 
 func TestLogRecord_Serialize(t *testing.T) {
-	util.InitLogger("", 1024, time.Second, true)
-	file := "/tmp/fakedb.wal"
-	f, err := os.OpenFile(file, os.O_RDONLY, 0666)
-	stat, err := f.Stat()
-	assert.Nil(t, err)
-	fmt.Printf("size: %d\n", stat.Size())
-	assert.Nil(t, err)
-	l, err := ReadLog(f, 15860)
-	assert.Nil(t, err)
-	fmt.Printf("log: %s\n", l)
+	//util.InitLogger("", 1024, time.Second, true)
+	//file := "/tmp/fakedb.wal"
+	//f, err := os.OpenFile(file, os.O_RDONLY, 0666)
+	//stat, err := f.Stat()
+	//assert.Nil(t, err)
+	//fmt.Printf("size: %d\n", stat.Size())
+	//assert.Nil(t, err)
+	//l, err := ReadLog(f, 15860)
+	//assert.Nil(t, err)
+	//fmt.Printf("log: %s\n", l)
 }
 
 //func TestLogManager_FlushPeriodly(t *testing.T) {
